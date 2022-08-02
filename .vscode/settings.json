@@ -1,0 +1,50 @@
+// {
+//   "editor.formatOnSave": false,
+//   "[javascript]": {
+//     "editor.formatOnSave": true,
+//     "editor.tabSize": 2
+//   },
+//   "[javascriptreact]": {
+//     "editor.formatOnSave": true,
+//     "editor.tabSize": 2
+//   },
+//   "[json]": {
+//     "editor.formatOnSave": true,
+//     "editor.tabSize": 2
+//   },
+//   "eslint.autoFixOnSave": true,
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll.tslint": true,
+//     "source.fixAll.eslint": true
+//   }
+// }
+{
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ],
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.Prettier": true 
+  },
+  "git.ignoreLimitWarning": true
+}

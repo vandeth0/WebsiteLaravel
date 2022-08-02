@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    "transform-class-properties",
+    "@babel/plugin-syntax-dynamic-import"
+  ],
+  "presets": ["react-app", "mobx"]
+}
