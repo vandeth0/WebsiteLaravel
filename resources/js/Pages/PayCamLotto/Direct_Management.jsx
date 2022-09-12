@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Main_header from 'Pages/Data/Main_header';
 import Main_footer from 'Pages/Data/Main_footer';
+import GoogleMaps from './GoogleMaps';
 
 export default class Direct_Management extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -16,48 +18,17 @@ export default class Direct_Management extends Component {
               <p>Direct Management</p>
             </div>
 
-            <div className="col-12 text-center">
-              <h4>Direct Management</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
-            </div>
-
             <div className="col-12">
               <h4>Direct Management</h4>
             </div>
 
             <hr />
 
-            <div className="col-12">
+            <div className="col-xl-9 col-lg-9 col-12">
               <h4>Our Agency</h4>
               <p>You can shop at your nearest PAYCAM agent.</p>
               <img
-                src="images/photofile/agent of paycam.png"
+                src="/images/photofile/agent of paycam.png"
                 className="my-3"
                 width="250px"
                 style={{
@@ -73,7 +44,7 @@ export default class Direct_Management extends Component {
               </p>
               <img
                 className="my-3"
-                src="images/photofile/map cambodia.jpg"
+                src="/images/photofile/map cambodia.jpg"
                 width="100%"
                 alt=""
                 style={{
@@ -85,21 +56,14 @@ export default class Direct_Management extends Component {
               />
             </div>
 
-            <div className="col-12">
+            <div className="col-xl-3 col-lg-3 col-12 ">
               <h4>Our Agent</h4>
               <p>You can find our agency’s PayCam in map below.</p>
+              <GoogleMaps />
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62533.08278477522!2d104.8508212!3d11.6006858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31094f96ab30e4cf%3A0x705aca340d7bbc14!2sWL%20Paycam%20(Cambodia)%20Co.%2C%20LTD!5e0!3m2!1sko!2skr!4v1640827928130!5m2!1sko!2skr"
+                src="https://www.youtube.com/embed/x5yzatBFS5Y"
                 width="100%"
-                height="600px"
-                id="iframe-draw-result"
                 frameBorder="0"
-                style={{
-                  borderTop: '10px solid #460ca7',
-                  borderBottom: '10px solid #9901b7',
-                  borderLeft: '10px solid #460ca7',
-                  borderRight: '10px solid #9901b7',
-                }}
               ></iframe>
             </div>
           </div>

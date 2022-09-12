@@ -28,14 +28,14 @@ export default class New_info extends Component {
   render() {
     const { newsList } = this.store;
     return (
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           {newsList &&
             newsList.length > 0 &&
             newsList.map((item, idx) => {
               return (
                 <Fragment key={idx}>
-                  <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 my-2">
+                  <div className="col-12 my-2">
                     <img
                       src={`/storage/News/${item.file_hash}`}
                       alt=""
@@ -77,7 +77,7 @@ export default class New_info extends Component {
                     </div>
 
                     <div className="">
-                      <NavLink to="/News" title="Preview">
+                      <NavLink to="/community/News" title="Preview">
                         <FontAwesomeIcon icon={faBook} className="mx-2" />
                       </NavLink>
                     </div>

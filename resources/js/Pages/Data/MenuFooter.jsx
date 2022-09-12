@@ -46,7 +46,7 @@ export default class MenuFooter extends Component {
           </li>
           <li>
             <NavLink
-              to="/Notice"
+              to="/community/Notice"
               onClick={(e) => {
                 e.stopPropagation();
                 var x = document.getElementById('reader');
@@ -82,7 +82,7 @@ export default class MenuFooter extends Component {
           </li>
           <li>
             <NavLink
-              to="/All_Winning_Numbers"
+              to="/winningresults/All_Winning_Numbers"
               onClick={(e) => {
                 e.stopPropagation();
                 var x = document.getElementById('reader');
@@ -100,7 +100,7 @@ export default class MenuFooter extends Component {
           </li>
           <li>
             <NavLink
-              to="/Agency"
+              to="/paycamlotto639/Agency"
               onClick={(e) => {
                 e.stopPropagation();
                 var x = document.getElementById('reader');

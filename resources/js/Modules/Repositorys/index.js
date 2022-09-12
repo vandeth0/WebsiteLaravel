@@ -8,6 +8,8 @@ import BallListRepo from "./BallListRepo";
 import NoticeRepo from "./NoticeRepo";
 import SliderPhotoRepo from "./SliderPhotoRepo";
 import UserLoginRepo from "./UserLoginRepo";
+import LocationDealerRepo from "./LocationDealerRepo";
+import BallApiRepo from "./BallApiRepo";
 
 
 export const Repos = {
@@ -21,5 +23,7 @@ export const Repos = {
   noticeRepo: new NoticeRepo(),
   sliderPhotoRepo: new SliderPhotoRepo(),
   userLoginRepo: new UserLoginRepo(),
+  locationDealerRepo: new LocationDealerRepo(),
+  ballApiRepo: new BallApiRepo(),
 
 }

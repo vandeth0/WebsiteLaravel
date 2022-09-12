@@ -19,6 +19,7 @@ import {
 
 export default class How_To_Buy extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -31,38 +32,7 @@ export default class How_To_Buy extends Component {
               <p>How To Buy</p>
             </div>
 
-            <div className="col-12 text-center">
-              <h4>How To Buy</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
-            </div>
-
-            <div className="col-12">
+            <div className="col-xl-9 col-lg-9 col-12">
               <h4>Equipment</h4>
               <p>
                 Lottery Sales Location <br />
@@ -113,13 +83,13 @@ export default class How_To_Buy extends Component {
               </p>
             </div>
 
-            <div className="col-12 my-3">
+            <div className="col-xl-3 col-lg-3 col-12 my-3">
               <img
-                src="images/photofile/branch-office.jpg"
-                width="200px"
+                src="/images/photofile/branch-office.jpg"
+                width="50%"
                 alt=""
               />
-              <img src="images/photofile/13412def2.png" width="200px" alt="" />
+              <img src="/images/photofile/13412def2.png" width="50%" alt="" />
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default class Community extends Component {
           <label htmlFor="choose3">
             <span className="font-a">
               <img
-                src="images/photofile/community-icon.png"
+                src="/images/photofile/community-icon.png"
                 width="25px"
                 alt=""
               />{' '}
@@ -30,33 +30,45 @@ export default class Community extends Component {
 
           <div className="choose-language">
             <div>
-              <NavLink to="/Notice">
-                <img src="images/photofile/notice.png" width="25px" alt="" />{' '}
+              <NavLink to="/community/Notice">
+                <img src="/images/photofile/notice.png" width="25px" alt="" />{' '}
                 Notice
               </NavLink>
             </div>
             <div>
-              <NavLink to="/WL_PAYCAM_Event">
-                <img src="images/photofile/wl events.png" width="25px" alt="" />{' '}
+              <NavLink to="/community/WL_PAYCAM_Event">
+                <img
+                  src="/images/photofile/wl events.png"
+                  width="25px"
+                  alt=""
+                />{' '}
                 WL PAYCAM Event
               </NavLink>
             </div>
             <div>
-              <NavLink to="/News">
-                <img src="images/photofile/news-icon.png" width="25px" alt="" />{' '}
+              <NavLink to="/community/News">
+                <img
+                  src="/images/photofile/news-icon.png"
+                  width="25px"
+                  alt=""
+                />{' '}
                 News
               </NavLink>
             </div>
             <div>
-              <NavLink to="/News_of_PLP">
-                <img src="images/photofile/news-icon.png" width="25px" alt="" />{' '}
+              <NavLink to="/community/News_of_PLP">
+                <img
+                  src="/images/photofile/news-icon.png"
+                  width="25px"
+                  alt=""
+                />{' '}
                 News of PLP
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Store_of_The_Week">
+              <NavLink to="/community/Store_of_The_Week">
                 <img
-                  src="images/photofile/store-icon.png"
+                  src="/images/photofile/store-icon.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -64,8 +76,8 @@ export default class Community extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/QnA">
-                <img src="images/photofile/qna.png" width="25px" alt="" /> QnA
+              <NavLink to="/community/QnA">
+                <img src="/images/photofile/qna.png" width="25px" alt="" /> QnA
               </NavLink>
             </div>
           </div>

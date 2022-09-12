@@ -25,7 +25,18 @@ Route::group(['prefix' => '/print'], function () {
 });
 
 Route::view('/{page?}', 'index')->where('page', '.*');
+Route::view('/paycamLotto639/{page?}', 'index')->where('page', '.*');
+Route::view('/winningresults/{page?}', 'index')->where('page', '.*');
+Route::view('/community/{page?}', 'index')->where('page', '.*');
+Route::view('/loveinus/{page?}', 'index')->where('page', '.*');
 
+Route::view('/Khmer/winningresults/{page?}', 'index')->where('page', '.*');
+Route::view('/Khmer/paycamLotto639{page?}', 'index')->where('page', '.*');
+Route::view('/Khmer/community/{page?}', 'index')->where('page', '.*');
+Route::view('/Khmer/loveinus/{page?}', 'index')->where('page', '.*');
+
+
+// Route::get('/home','TestingController@index');
 
 
 // Route::get('/', function () {

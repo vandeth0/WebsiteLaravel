@@ -76,7 +76,7 @@ export default class NoticeShow extends Component {
                         target="_blank"
                       >
                         <img
-                          src="images/photofile/youtube-icon.png"
+                          src="/images/photofile/youtube-icon.png"
                           width="30px"
                           alt=""
                         />
@@ -87,7 +87,7 @@ export default class NoticeShow extends Component {
                         target="_blank"
                       >
                         <img
-                          src="images/photofile/twitter-12.png"
+                          src="/images/photofile/twitter-12.png"
                           width="30px"
                           alt=""
                         />
@@ -98,7 +98,7 @@ export default class NoticeShow extends Component {
                         target="_blank"
                       >
                         <img
-                          src="images/photofile/instagram=123.png"
+                          src="/images/photofile/instagram=123.png"
                           width="30px"
                           alt=""
                         />
@@ -109,7 +109,7 @@ export default class NoticeShow extends Component {
                         target="_blank"
                       >
                         <img
-                          src="images/photofile/google.png"
+                          src="/images/photofile/google.png"
                           width="30px"
                           alt=""
                         />
@@ -120,7 +120,7 @@ export default class NoticeShow extends Component {
                         target="_blank"
                       >
                         <img
-                          src="images/photofile/facebook1231.png"
+                          src="/images/photofile/facebook1231.png"
                           width="30px"
                           alt=""
                         />

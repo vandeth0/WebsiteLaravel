@@ -1,6 +1,6 @@
 import { observable, action } from 'mobx';
 import { Repos } from '../Repositorys';
-import { QNAProvider, TestData, GalleryProvider, NewsProvider, VideoProvider, BallListProvider, NoticeProvider, SliderPhotoProvider, CheckingWinningProvider, UserLoginProvider } from '.';
+import { QNAProvider, TestData, GalleryProvider, NewsProvider, VideoProvider, BallListProvider, NoticeProvider, SliderPhotoProvider, CheckingWinningProvider, UserLoginProvider, LocationDealerProvider, BallApiProvider } from '.';
 
 export default class RootProvider {
   constructor() {
@@ -15,6 +15,8 @@ export default class RootProvider {
     this.sliderPhotoProvider = new SliderPhotoProvider(this); 
     this.checkingWinningProvider = new CheckingWinningProvider(this); 
     this.userLoginProvider = new UserLoginProvider(this); 
+    this.locationDealerProvider = new LocationDealerProvider(this); 
+    this.ballApiProvider = new BallApiProvider(this); 
   }
 
   // route 설정

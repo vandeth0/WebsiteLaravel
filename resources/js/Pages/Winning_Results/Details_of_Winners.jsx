@@ -15,6 +15,7 @@ import {
 
 export default class Details_of_Winners extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -28,38 +29,7 @@ export default class Details_of_Winners extends Component {
                 <p>Details of Winners</p>
               </div>
 
-              <div className="col-12 text-center">
-                <h4>Details of Winners</h4>
-              </div>
-
-              <div className="col-12 mb-4 d-flex justify-content-center">
-                <div
-                  style={{
-                    height: '7px',
-                    width: '25px',
-                    background: '#00bbff',
-                    float: 'left',
-                  }}
-                ></div>
-                <div
-                  style={{
-                    height: '7px',
-                    width: '25px',
-                    background: '#ff0000',
-                    float: 'left',
-                  }}
-                ></div>
-                <div
-                  style={{
-                    height: '7px',
-                    width: '25px',
-                    background: '#6426ff',
-                    float: 'left',
-                  }}
-                ></div>
-              </div>
-
-              <div className="col-12 text-center">
+              <div className="col-12">
                 <p className="text-secondary">
                   Prize : $154,201 <br />
                   The payment rate is 50% of the total sales price.

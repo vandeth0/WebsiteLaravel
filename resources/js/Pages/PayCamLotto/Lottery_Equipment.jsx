@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import Main_header from 'Pages/Data/Main_header';
 import Main_footer from 'Pages/Data/Main_footer';
+import { NavLink } from 'react-router-dom';
+import New_info from 'Pages/Main_Information/New_info';
 
 export default class Lottery_Equipment extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -16,38 +19,7 @@ export default class Lottery_Equipment extends Component {
               <p>Lottery Equipment</p>
             </div>
 
-            <div className="col-12 text-center">
-              <h4>Lottery Equipment</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
-            </div>
-
-            <div className="col-12">
+            <div className="col-xl-9 col-lg-9 col-12">
               <h4>Equipment</h4>
               <p>
                 A lottery machine is the machine used to draw the winning
@@ -55,19 +27,17 @@ export default class Lottery_Equipment extends Component {
                 numbers, or winning tickets, from a container.
               </p>
               <img
-                src="images/photofile/315wdgwshwre.jpg"
+                src="/images/photofile/315wdgwshwre.jpg"
                 width="150px"
                 height="150px"
                 alt=""
               />
               <img
-                src="images/photofile/WinTV_Essencio_Vega_web_v2.jpg"
+                src="/images/photofile/WinTV_Essencio_Vega_web_v2.jpg"
                 width="150px"
                 height="150px"
                 alt=""
               />
-            </div>
-            <div className="col-12">
               <h4>Random Number Generators</h4>
               <p>
                 Some lotteries use computerized random number generators, either
@@ -78,13 +48,10 @@ export default class Lottery_Equipment extends Component {
                 lottery is being rigged.
               </p>
               <img
-                src="images/photofile/random-number-generator-1200x768.png"
+                src="/images/photofile/random-number-generator-1200x768.png"
                 width="250px"
                 alt=""
               />
-            </div>
-
-            <div className="col-12 my-5">
               <h4>Air Max</h4>
               <p>
                 lottery machine has a fan in the bottom that blows the balls
@@ -103,10 +70,18 @@ export default class Lottery_Equipment extends Component {
                 similar machine is used in a "pick 3" or "pick 4" game.
               </p>
               <img
-                src="images/photofile/WinTV_Essencio_Vega_web_v2.jpg"
+                src="/images/photofile/WinTV_Essencio_Vega_web_v2.jpg"
                 width="100%"
                 alt=""
               />
+            </div>
+            <div
+              className="col-col-3 col-lg-3 col-12 moblie-view menu-news-info"
+              style={{
+                height: '150vh',
+              }}
+            >
+              <New_info />
             </div>
           </div>
         </div>

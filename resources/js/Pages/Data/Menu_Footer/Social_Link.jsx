@@ -26,38 +26,42 @@ export default class Social_Lick extends Component {
             className="m-2"
             target="_blank"
           >
-            <img src="images/photofile/youtube-icon.png" width="30px" alt="" />
+            <img src="/images/photofile/youtube-icon.png" width="30px" alt="" />
           </a>
           <a
             href="https://twitter.com/official_paycam"
             className="m-2"
             target="_blank"
           >
-            <img src="images/photofile/twitter-12.png" width="30px" alt="" />
+            <img src="/images/photofile/twitter-12.png" width="30px" alt="" />
           </a>
           <a
             href="https://www.instagram.com/paycam_official/"
             className="m-2"
             target="_blank"
           >
-            <img src="images/photofile/instagram=123.png" width="30px" alt="" />
+            <img
+              src="/images/photofile/instagram=123.png"
+              width="30px"
+              alt=""
+            />
           </a>
           <a href="mailto:help@paycamlotto.com" className="m-2" target="_blank">
-            <img src="images/photofile/google.png" width="30px" alt="" />
+            <img src="/images/photofile/google.png" width="30px" alt="" />
           </a>
           <a
             href="https://web.facebook.com/paycamcambodia/"
             className="m-2"
             target="_blank"
           >
-            <img src="images/photofile/facebook1231.png" width="30px" alt="" />
+            <img src="/images/photofile/facebook1231.png" width="30px" alt="" />
           </a>
         </div>
 
         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-end align-items-center">
           <div>
             <img
-              src="images/photofile/usa-logo.png"
+              src="/images/photofile/usa-logo.png"
               width="25px"
               height="15px"
               alt=""
@@ -78,9 +82,9 @@ export default class Social_Lick extends Component {
             <div className="language-country">
               <ul>
                 <li>
-                  <NavLink to="/ទំព័រដើម">
+                  <NavLink to="/khmer">
                     <img
-                      src="images/photofile/1200px-Flag_of_Cambodia.svg.png"
+                      src="/images/photofile/1200px-Flag_of_Cambodia.svg.png"
                       width="25px"
                       height="15px"
                       alt=""
@@ -91,7 +95,7 @@ export default class Social_Lick extends Component {
                 <li>
                   <NavLink to="/">
                     <img
-                      src="images/photofile/usa-logo.png"
+                      src="/images/photofile/usa-logo.png"
                       width="25px"
                       height="15px"
                       alt=""

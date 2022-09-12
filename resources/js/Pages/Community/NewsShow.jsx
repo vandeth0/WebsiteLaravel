@@ -38,7 +38,7 @@ export default class NewsShow extends Component {
             .map((item, idx) => {
               return (
                 <Fragment key={idx}>
-                  <div className="col-12 my-2 p-5 font-khmer-language">
+                  <div className="col-12 my-2 font-khmer-language">
                     <div className="d-flex align-items-center justify-content-center">
                       <img
                         src={`/storage/News/${item.file_hash}`}
@@ -82,7 +82,7 @@ export default class NewsShow extends Component {
                           target="_blank"
                         >
                           <img
-                            src="images/photofile/youtube-icon.png"
+                            src="/images/photofile/youtube-icon.png"
                             width="30px"
                             alt=""
                           />
@@ -93,7 +93,7 @@ export default class NewsShow extends Component {
                           target="_blank"
                         >
                           <img
-                            src="images/photofile/twitter-12.png"
+                            src="/images/photofile/twitter-12.png"
                             width="30px"
                             alt=""
                           />
@@ -104,7 +104,7 @@ export default class NewsShow extends Component {
                           target="_blank"
                         >
                           <img
-                            src="images/photofile/instagram=123.png"
+                            src="/images/photofile/instagram=123.png"
                             width="30px"
                             alt=""
                           />
@@ -115,7 +115,7 @@ export default class NewsShow extends Component {
                           target="_blank"
                         >
                           <img
-                            src="images/photofile/google.png"
+                            src="/images/photofile/google.png"
                             width="30px"
                             alt=""
                           />
@@ -126,7 +126,7 @@ export default class NewsShow extends Component {
                           target="_blank"
                         >
                           <img
-                            src="images/photofile/facebook1231.png"
+                            src="/images/photofile/facebook1231.png"
                             width="30px"
                             alt=""
                           />

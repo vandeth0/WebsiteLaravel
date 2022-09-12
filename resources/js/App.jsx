@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'mobx-react';
 import RootProvider from './Modules/Providers';
-// import MainFile from 'Pages/Main/MainFile';
-import Pages from 'Pages/Pages';
-import Test1 from 'Pages/Test1';
-import Test from 'Pages/Test';
+
 import Solution from 'Pages/PayCamLotto/Solution';
 import Draw_Results from 'Pages/PayCamLotto/Draw_Results';
 import Lottery_Equipment from 'Pages/PayCamLotto/Lottery_Equipment';
@@ -35,45 +32,45 @@ import WL_PAYCAM_CAMBODIA from 'Pages/MenuFooterList/WL_PAYCAM_CAMBODIA';
 import Terms_of_Service from 'Pages/MenuFooterList/Terms_of_Service';
 import Policy_and_Privacy from 'Pages/MenuFooterList/Policy_and_Privacy';
 import Agency from 'Pages/PayCamLotto/Agency';
-import Main_header from 'Pages/Data/Main_header';
-import Main_footer from 'Pages/Data/Main_footer';
 import Main_body from 'Pages/Data/Main_body';
-import ទំព័រដើម from './Pages/khmerVersion/ទំព័រដើម';
-import LoginUserkh from './Pages/khmerVersion/Desk_khmer/LoginUser';
-import LoginUser from './Pages/Desk/LoginUser';
-import ទីភ្នាក់ងារ from 'Pages/khmerVersion/PayCamLotto/Agency';
-import ការគ្រប់គ្រងផ្ទាល់ from 'Pages/khmerVersion/PayCamLotto/Direct_Management';
-import លទ្ធផលការចាប់ឆ្នោត from 'Pages/khmerVersion/PayCamLotto/Draw_Results';
-import របៀបទិញ from 'Pages/khmerVersion/PayCamLotto/How_To_Buy';
-import ឧបករណ៍ឆ្នោត from 'Pages/khmerVersion/PayCamLotto/Lottery_Equipment';
-import ដំណោះស្រាយ from 'Pages/khmerVersion/PayCamLotto/Solution';
-import All_Winning_NumbersKH from 'Pages/khmerVersion/Winning_Results/All_Winning_Numbers';
-import Check_Winning_NumbersKH from 'Pages/khmerVersion/Winning_Results/Check_Winning_Numbers';
-import Details_of_WinnersKH from 'Pages/khmerVersion/Winning_Results/Details_of_Winners';
-import How_To_Get_Your_PrizesKH from 'Pages/khmerVersion/Winning_Results/How_To_Get_Your_Prizes';
-import Draw_BroadcastKH from 'Pages/khmerVersion/Winning_Results/Draw_Broadcast';
-import Weekly_LotteryKH from 'Pages/khmerVersion/Winning_Results/Weekly_Lottery';
-import Instant_LotteryKH from 'Pages/khmerVersion/Winning_Results/Instant_Lottery';
-import NewsKh from 'Pages/khmerVersion/Community/News';
-import News_of_PLPKH from 'Pages/khmerVersion/Community/News_of_PLP';
-import NoticeKH from 'Pages/khmerVersion/Community/Notice';
-import QnAKH from 'Pages/khmerVersion/Community/QnA';
-import Store_of_The_WeekKH from 'Pages/khmerVersion/Community/Store_of_The_Week';
-import WL_PAYCAM_EventKH from 'Pages/khmerVersion/Community/WL_PAYCAM_Event';
-import Community_ServiceKH from 'Pages/khmerVersion/LOVE_IN_US/Community_Service';
-import Donation_ReportKH from 'Pages/khmerVersion/LOVE_IN_US/Donation_Report';
-import Lottery_Funds_SocialKH from 'Pages/khmerVersion/LOVE_IN_US/Lottery_Funds_Social';
-import Social_ContributionKH from 'Pages/khmerVersion/LOVE_IN_US/Social_Contribution';
-import Hobakdungkul_HoldingsKH from 'Pages/khmerVersion/MenuFooterList/Hobakdungkul_Holdings';
-import PayCam_Lotto_ProtocolKH from 'Pages/khmerVersion/MenuFooterList/PayCam_Lotto_Protocol';
-import Policy_and_PrivacyKH from 'Pages/khmerVersion/MenuFooterList/Policy_and_Privacy';
-import Terms_of_ServiceKH from 'Pages/khmerVersion/MenuFooterList/Terms_of_Service';
-import WL_PAYCAM_CAMBODIAKH from 'Pages/khmerVersion/MenuFooterList/WL_PAYCAM_CAMBODIA';
-import FAQKH from 'Pages/khmerVersion/MenuFooterList/FAQKH';
 import FAQ from 'Pages/MenuFooterList/FAQ';
 import Info_Edit from 'Pages/Edit_Data/Info_Edit';
 import News_Info from 'Pages/Edit_Data/News_Info';
 import Search from 'Pages/Data/Search';
+
+import Kh_Solution from 'PagesKhmer/PayCamLotto/Solution';
+import Kh_Draw_Results from 'PagesKhmer/PayCamLotto/Draw_Results';
+import Kh_Lottery_Equipment from 'PagesKhmer/PayCamLotto/Lottery_Equipment';
+import Kh_How_To_Buy from 'PagesKhmer/PayCamLotto/How_To_Buy';
+import Kh_Direct_Management from 'PagesKhmer/PayCamLotto/Direct_Management';
+import Kh_All_Winning_Numbers from 'PagesKhmer/Winning_Results/All_Winning_Numbers';
+import Kh_Check_Winning_Numbers from 'PagesKhmer/Winning_Results/Check_Winning_Numbers';
+import Kh_Details_of_Winners from 'PagesKhmer/Winning_Results/Details_of_Winners';
+import Kh_How_To_Get_Your_Prizes from 'PagesKhmer/Winning_Results/How_To_Get_Your_Prizes';
+import Kh_Draw_Broadcast from 'PagesKhmer/Winning_Results/Draw_Broadcast';
+import Kh_Weekly_Lottery from 'PagesKhmer/Winning_Results/Weekly_Lottery';
+import Kh_Instant_Lottery from 'PagesKhmer/Winning_Results/Instant_Lottery';
+import Kh_Notice from 'PagesKhmer/Community/Notice';
+import Kh_WL_PAYCAM_Event from 'PagesKhmer/Community/WL_PAYCAM_Event';
+import Kh_News from 'PagesKhmer/Community/News';
+import Kh_News_of_PLP from 'PagesKhmer/Community/News_of_PLP';
+import Kh_Store_of_The_Week from 'PagesKhmer/Community/Store_of_The_Week';
+import Kh_QnA from 'PagesKhmer/Community/QnA';
+import Kh_Lottery_Funds_Social from 'PagesKhmer/LOVE_IN_US/Lottery_Funds_Social';
+import Kh_Social_Contribution from 'PagesKhmer/LOVE_IN_US/Social_Contribution';
+import Kh_Donation_Report from 'PagesKhmer/LOVE_IN_US/Donation_Report';
+import Kh_Community_Service from 'PagesKhmer/LOVE_IN_US/Community_Service';
+import Kh_Hobakdungkul_Holdings from 'PagesKhmer/MenuFooterList/Hobakdungkul_Holdings';
+import Kh_PayCam_Lotto_Protocol from 'PagesKhmer/MenuFooterList/PayCam_Lotto_Protocol';
+import Kh_WL_PAYCAM_CAMBODIA from 'PagesKhmer/MenuFooterList/WL_PAYCAM_CAMBODIA';
+import Kh_Terms_of_Service from 'PagesKhmer/MenuFooterList/Terms_of_Service';
+import Kh_Policy_and_Privacy from 'PagesKhmer/MenuFooterList/Policy_and_Privacy';
+import Kh_Agency from 'PagesKhmer/PayCamLotto/Agency';
+import Kh_Main_body from 'PagesKhmer/Data/Main_body';
+import Kh_FAQ from 'PagesKhmer/MenuFooterList/FAQ';
+import Kh_Info_Edit from 'PagesKhmer/Edit_Data/Info_Edit';
+import Kh_News_Info from 'PagesKhmer/Edit_Data/News_Info';
+import Kh_Search from 'PagesKhmer/Data/Search';
 
 import '../sass/app.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -99,139 +96,49 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Main_body} />
-            <Route exact path="/LoginUser" component={LoginUser} />
             <Route exact path="/Search" component={Search} />
-            <Route exact path="/ទំព័រដើម" component={ទំព័រដើម} />
-            <Route exact path="/FAQKH" component={FAQKH} />
             <Route exact path="/FAQ" component={FAQ} />
             <Route exact path="/Info_Edit" component={Info_Edit} />
             <Route exact path="/News_Info" component={News_Info} />
+            <Route exact path="/paycamLotto639/Solution" component={Solution} />
             <Route
               exact
-              path="/Hobakdungkul_HoldingsKH"
-              component={Hobakdungkul_HoldingsKH}
+              path="/winningresults/Draw_Broadcast"
+              component={Draw_Broadcast}
             />
             <Route
               exact
-              path="/PayCam_Lotto_ProtocolKH"
-              component={PayCam_Lotto_ProtocolKH}
+              path="/paycamLotto639/Draw_Results"
+              component={Draw_Results}
             />
             <Route
               exact
-              path="/Policy_and_PrivacyKH"
-              component={Policy_and_PrivacyKH}
+              path="/paycamLotto639/How_To_Buy"
+              component={How_To_Buy}
             />
             <Route
               exact
-              path="/Terms_of_ServiceKH"
-              component={Terms_of_ServiceKH}
+              path="/winningresults/Weekly_Lottery"
+              component={Weekly_Lottery}
             />
             <Route
               exact
-              path="/WL_PAYCAM_CAMBODIAKH"
-              component={WL_PAYCAM_CAMBODIAKH}
+              path="/winningresults/Instant_Lottery"
+              component={Instant_Lottery}
             />
+            <Route exact path="/community/Notice" component={Notice} />
             <Route
               exact
-              path="/Community_ServiceKH"
-              component={Community_ServiceKH}
+              path="/community/WL_PAYCAM_Event"
+              component={WL_PAYCAM_Event}
             />
+            <Route exact path="/community/News" component={News} />
             <Route
               exact
-              path="/Donation_ReportKH"
-              component={Donation_ReportKH}
+              path="/community/News_of_PLP"
+              component={News_of_PLP}
             />
-            <Route
-              exact
-              path="/Lottery_Funds_SocialKH"
-              component={Lottery_Funds_SocialKH}
-            />
-            <Route
-              exact
-              path="/Social_ContributionKH"
-              component={Social_ContributionKH}
-            />
-            <Route exact path="/NewsKh" component={NewsKh} />
-            <Route exact path="/News_of_PLPKH" component={News_of_PLPKH} />
-            <Route exact path="/NoticeKH" component={NoticeKH} />
-            <Route exact path="/QnAKH" component={QnAKH} />
-            <Route
-              exact
-              path="/Store_of_The_WeekKH"
-              component={Store_of_The_WeekKH}
-            />
-            <Route
-              exact
-              path="/WL_PAYCAM_EventKH"
-              component={WL_PAYCAM_EventKH}
-            />
-            <Route
-              exact
-              path="/All_Winning_NumbersKH"
-              component={All_Winning_NumbersKH}
-            />
-            <Route
-              exact
-              path="/Check_Winning_NumbersKH"
-              component={Check_Winning_NumbersKH}
-            />
-            <Route
-              exact
-              path="/Details_of_WinnersKH"
-              component={Details_of_WinnersKH}
-            />
-            <Route
-              exact
-              path="/How_To_Get_Your_PrizesKH"
-              component={How_To_Get_Your_PrizesKH}
-            />
-            <Route
-              exact
-              path="/Draw_BroadcastKH"
-              component={Draw_BroadcastKH}
-            />
-            <Route
-              exact
-              path="/Weekly_LotteryKH"
-              component={Weekly_LotteryKH}
-            />
-            <Route
-              exact
-              path="/Weekly_LotteryKH"
-              component={Weekly_LotteryKH}
-            />
-            <Route
-              exact
-              path="/Instant_LotteryKH"
-              component={Instant_LotteryKH}
-            />
-            <Route
-              exact
-              path="/ការគ្រប់គ្រងផ្ទាល់"
-              component={ការគ្រប់គ្រងផ្ទាល់}
-            />
-            <Route
-              exact
-              path="/លទ្ធផលការចាប់ឆ្នោត"
-              component={លទ្ធផលការចាប់ឆ្នោត}
-            />
-            <Route exact path="/របៀបទិញ" component={របៀបទិញ} />
-            <Route exact path="/ទីភ្នាក់ងារ" component={ទីភ្នាក់ងារ} />
-            <Route exact path="/ឧបករណ៍ឆ្នោត" component={ឧបករណ៍ឆ្នោត} />
-            <Route exact path="/ដំណោះស្រាយ" component={ដំណោះស្រាយ} />
-            <Route exact path="/LoginUserkh" component={LoginUserkh} />
-
-            <Route exact path="/Solution" component={Solution} />
-            <Route exact path="/Draw_Broadcast" component={Draw_Broadcast} />
-            <Route exact path="/Draw_Results" component={Draw_Results} />
-            <Route exact path="/How_To_Buy" component={How_To_Buy} />
-            <Route exact path="/Weekly_Lottery" component={Weekly_Lottery} />
-            <Route exact path="/Instant_Lottery" component={Instant_Lottery} />
-            <Route exact path="/Notice" component={Notice} />
-            <Route exact path="/WL_PAYCAM_Event" component={WL_PAYCAM_Event} />
-            <Route exact path="/News" component={News} />
-            <Route exact path="/News_of_PLP" component={News_of_PLP} />
-            <Route exact path="/Agency" component={Agency} />
+            <Route exact path="/paycamLotto639/Agency" component={Agency} />
             <Route
               exact
               path="/Policy_and_Privacy"
@@ -259,64 +166,196 @@ class App extends Component {
             />
             <Route
               exact
-              path="/Lottery_Funds_Social"
+              path="/loveinus/Lottery_Funds_Social"
               component={Lottery_Funds_Social}
             />
             <Route
               exact
-              path="/Social_Contribution"
+              path="/loveinus/Social_Contribution"
               component={Social_Contribution}
             />
-            <Route exact path="/Donation_Report" component={Donation_Report} />
             <Route
               exact
-              path="/Community_Service"
+              path="/loveinus/Donation_Report"
+              component={Donation_Report}
+            />
+            <Route
+              exact
+              path="/loveinus/Community_Service"
               component={Community_Service}
             />
             <Route
               exact
-              path="/Store_of_The_Week"
+              path="/community/Store_of_The_Week"
               component={Store_of_The_Week}
             />
-            <Route exact path="/QnA" component={QnA} />
+            <Route exact path="/community/QnA" component={QnA} />
             <Route
               exact
-              path="/How_To_Get_Your_Prizes"
+              path="/winningresults/How_To_Get_Your_Prizes"
               component={How_To_Get_Your_Prizes}
             />
             <Route
               exact
-              path="/Details_of_Winners"
+              path="/winningresults/Details_of_Winners"
               component={Details_of_Winners}
             />
             <Route
               exact
-              path="/Check_Winning_Numbers"
+              path="/winningresults/Check_Winning_Numbers"
               component={Check_Winning_Numbers}
             />
             <Route
               exact
-              path="/All_Winning_Numbers"
+              path="/winningresults/All_Winning_Numbers"
               component={All_Winning_Numbers}
             />
             <Route
               exact
-              path="/Direct_Management"
+              path="/paycamLotto639/Direct_Management"
               component={Direct_Management}
             />
             <Route
               exact
-              path="/Lottery_Equipment"
+              path="/paycamLotto639/Lottery_Equipment"
               component={Lottery_Equipment}
             />
-            <Route exact path="/Test" component={Test} />
 
-            {/* <Route exact path="/login" component={Login} />
-            <Route path="/page" component={Main} />
-            <Route path="/popup" component={Popup} />
-            <Route path="/qr_record" component={Popup} />
-            <Route path="/etn" component={ExcelToNumbering} />
-            <Route component={SessionCheck} /> */}
+            {/* ===========================Khmer version======================== */}
+
+            <Route exact path="/khmer" component={Kh_Main_body} />
+            <Route exact path="/khmer/Search" component={Kh_Search} />
+            <Route exact path="/khmer/FAQ" component={Kh_FAQ} />
+            <Route exact path="/khmer/Info_Edit" component={Kh_Info_Edit} />
+            <Route exact path="/khmer/News_Info" component={Kh_News_Info} />
+            <Route
+              exact
+              path="/khmer/paycamLotto639/Solution"
+              component={Kh_Solution}
+            />
+            <Route
+              exact
+              path="/khmer/winningresults/Draw_Broadcast"
+              component={Kh_Draw_Broadcast}
+            />
+            <Route
+              exact
+              path="/khmer/paycamLotto639/Draw_Results"
+              component={Kh_Draw_Results}
+            />
+            <Route
+              exact
+              path="/khmer/paycamLotto639/How_To_Buy"
+              component={Kh_How_To_Buy}
+            />
+            <Route
+              exact
+              path="/khmer/winningresults/Weekly_Lottery"
+              component={Kh_Weekly_Lottery}
+            />
+            <Route
+              exact
+              path="/khmer/winningresults/Instant_Lottery"
+              component={Kh_Instant_Lottery}
+            />
+            <Route exact path="/khmer/community/Notice" component={Kh_Notice} />
+            <Route
+              exact
+              path="/khmer/community/WL_PAYCAM_Event"
+              component={Kh_WL_PAYCAM_Event}
+            />
+            <Route exact path="/khmer/community/News" component={Kh_News} />
+            <Route
+              exact
+              path="/khmer/community/News_of_PLP"
+              component={Kh_News_of_PLP}
+            />
+            <Route
+              exact
+              path="/khmer/paycamLotto639/Agency"
+              component={Kh_Agency}
+            />
+            <Route
+              exact
+              path="/khmer/Policy_and_Privacy"
+              component={Kh_Policy_and_Privacy}
+            />
+            <Route
+              exact
+              path="/khmer/Terms_of_Service"
+              component={Kh_Terms_of_Service}
+            />
+            <Route
+              exact
+              path="/khmer/Hobakdungkul_Holdings"
+              component={Kh_Hobakdungkul_Holdings}
+            />
+            <Route
+              exact
+              path="/khmer/PayCam_Lotto_Protocol"
+              component={Kh_PayCam_Lotto_Protocol}
+            />
+            <Route
+              exact
+              path="/WL_PAYCAM_CAMBODIA"
+              component={Kh_WL_PAYCAM_CAMBODIA}
+            />
+            <Route
+              exact
+              path="/khmer/loveinus/Lottery_Funds_Social"
+              component={Kh_Lottery_Funds_Social}
+            />
+            <Route
+              exact
+              path="/khmer/loveinus/Social_Contribution"
+              component={Kh_Social_Contribution}
+            />
+            <Route
+              exact
+              path="/khmer/loveinus/Donation_Report"
+              component={Kh_Donation_Report}
+            />
+            <Route
+              exact
+              path="/khmer/loveinus/Community_Service"
+              component={Kh_Community_Service}
+            />
+            <Route
+              exact
+              path="/khmer/community/Store_of_The_Week"
+              component={Kh_Store_of_The_Week}
+            />
+            <Route exact path="/khmer/community/QnA" component={Kh_QnA} />
+            <Route
+              exact
+              path="/khmer/winningresults/How_To_Get_Your_Prizes"
+              component={Kh_How_To_Get_Your_Prizes}
+            />
+            <Route
+              exact
+              path="/khmer/winningresults/Details_of_Winners"
+              component={Kh_Details_of_Winners}
+            />
+            <Route
+              exact
+              path="/khmer/winningresults/Check_Winning_Numbers"
+              component={Kh_Check_Winning_Numbers}
+            />
+            <Route
+              exact
+              path="/khmer/winningresults/All_Winning_Numbers"
+              component={Kh_All_Winning_Numbers}
+            />
+            <Route
+              exact
+              path="/khmer/paycamLotto639/Direct_Management"
+              component={Kh_Direct_Management}
+            />
+            <Route
+              exact
+              path="/khmer/paycamLotto639/Lottery_Equipment"
+              component={Kh_Lottery_Equipment}
+            />
           </Switch>
         </BrowserRouter>
       </Provider>

@@ -4,6 +4,7 @@ import Main_footer from 'Pages/Data/Main_footer';
 
 export default class PayCam_Lotto_Protocol extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -16,37 +17,6 @@ export default class PayCam_Lotto_Protocol extends Component {
               <p>PayCam Lotto Protocol(PLP)</p>
             </div>
 
-            <div className="col-12 text-center">
-              <h4>PayCam Lotto Protocol(PLP)</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
-            </div>
-
             <div className="col-12">
               <img
                 style={{
@@ -55,7 +25,7 @@ export default class PayCam_Lotto_Protocol extends Component {
                   borderRight: '15px solid #460ca7',
                   borderBottom: '15px solid #9901b7',
                 }}
-                src="images/photofile/protocol.jpg"
+                src="/images/photofile/protocol.jpg"
                 width="100%"
                 alt=""
               />
@@ -83,7 +53,7 @@ export default class PayCam_Lotto_Protocol extends Component {
             </div>
 
             <div className="col-xl-6 col-lg-6 col-md-6 col-12 ">
-              <img src="images/photofile/bitforex.png" width="100%" alt="" />
+              <img src="/images/photofile/bitforex.png" width="100%" alt="" />
             </div>
 
             <div className="col-xl-6 col-lg-6 col-md-6 col-12 my-3 d-flex align-items-center">
@@ -103,7 +73,7 @@ export default class PayCam_Lotto_Protocol extends Component {
             </div>
 
             <div className="col-xl-6 col-lg-6 col-md-6 col-12 ">
-              <img src="images/photofile/foblgate.png" width="100%" alt="" />
+              <img src="/images/photofile/foblgate.png" width="100%" alt="" />
             </div>
           </div>
         </div>

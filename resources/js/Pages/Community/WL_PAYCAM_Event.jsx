@@ -4,6 +4,7 @@ import Main_footer from 'Pages/Data/Main_footer';
 
 export default class WL_PAYCAM_Event extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -14,37 +15,6 @@ export default class WL_PAYCAM_Event extends Component {
             <div className="col-12 my-2">
               <h4>Community</h4>
               <p>WL PAYCAM EVENT</p>
-            </div>
-
-            <div className="col-12 text-center">
-              <h4>WL PAYCAM EVENT</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
             </div>
 
             <div className="col-12">
@@ -106,7 +76,7 @@ export default class WL_PAYCAM_Event extends Component {
               </p>
 
               <img
-                src="images/photofile/IMG_20220410_134714 (7).jpg"
+                src="/images/photofile/IMG_20220410_134714 (7).jpg"
                 width="100%"
                 alt=""
               />

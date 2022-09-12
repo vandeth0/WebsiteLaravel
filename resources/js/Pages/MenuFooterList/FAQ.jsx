@@ -4,6 +4,7 @@ import Main_footer from '../Data/Main_footer';
 
 export default class FAQKH extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>

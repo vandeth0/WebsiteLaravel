@@ -18,7 +18,7 @@ export default class Winning_Results extends Component {
         <div className="language choose2">
           <label htmlFor="choose2">
             <span className="font-a">
-              <img src="images/photofile/trophy.png" width="25px" alt="" />{' '}
+              <img src="/images/photofile/trophy.png" width="25px" alt="" />{' '}
               Winning Results{' '}
             </span>
             <FontAwesomeIcon icon={faCaretDown} />
@@ -26,9 +26,9 @@ export default class Winning_Results extends Component {
 
           <div className="choose-language">
             <div>
-              <NavLink to="/All_Winning_Numbers">
+              <NavLink to="/winningresults/All_Winning_Numbers">
                 <img
-                  src="images/photofile/all winning.png"
+                  src="/images/photofile/all winning.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -36,9 +36,9 @@ export default class Winning_Results extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Check_Winning_Numbers">
+              <NavLink to="/winningresults/Check_Winning_Numbers">
                 <img
-                  src="images/photofile/checking winning.png"
+                  src="/images/photofile/checking winning.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -46,9 +46,9 @@ export default class Winning_Results extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Details_of_Winners">
+              <NavLink to="/winningresults/Details_of_Winners">
                 <img
-                  src="images/photofile/detail-icon.png"
+                  src="/images/photofile/detail-icon.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -56,15 +56,19 @@ export default class Winning_Results extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/How_To_Get_Your_Prizes">
-                <img src="images/photofile/get prize.png" width="25px" alt="" />{' '}
+              <NavLink to="/winningresults/How_To_Get_Your_Prizes">
+                <img
+                  src="/images/photofile/get prize.png"
+                  width="25px"
+                  alt=""
+                />{' '}
                 How To Get Your Prizes
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Draw_Broadcast">
+              <NavLink to="/winningresults/Draw_Broadcast">
                 <img
-                  src="images/photofile/broadcasting.png"
+                  src="/images/photofile/broadcasting.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -74,7 +78,7 @@ export default class Winning_Results extends Component {
             <div>
               <NavLink to="#">
                 <img
-                  src="images/photofile/store-icon.png"
+                  src="/images/photofile/store-icon.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -82,10 +86,16 @@ export default class Winning_Results extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Weekly_Lottery"> Weekly Lottery</NavLink>
+              <NavLink to="/winningresults/Weekly_Lottery">
+                {' '}
+                Weekly Lottery
+              </NavLink>
             </div>
             <div>
-              <NavLink to="/Instant_Lottery"> Instant Lottery</NavLink>
+              <NavLink to="/winningresults/Instant_Lottery">
+                {' '}
+                Instant Lottery
+              </NavLink>
             </div>
           </div>
         </div>

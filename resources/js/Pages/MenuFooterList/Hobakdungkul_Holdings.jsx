@@ -4,6 +4,7 @@ import Main_footer from 'Pages/Data/Main_footer';
 
 export default class Hobakdungkul_Holdings extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -14,37 +15,6 @@ export default class Hobakdungkul_Holdings extends Component {
             <div className="col-12 my-2">
               <h4>About Us</h4>
               <p>Hobakdungkul Holdings</p>
-            </div>
-
-            <div className="col-12 text-center">
-              <h4>Hobakdungkul Holdings</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
             </div>
 
             <div className="col-12">
@@ -61,11 +31,11 @@ export default class Hobakdungkul_Holdings extends Component {
             </div>
 
             <div className="col-6">
-              <img src="images/photofile/building02.png" width="100%" alt="" />
+              <img src="/images/photofile/building02.png" width="100%" alt="" />
             </div>
 
             <div className="col-6">
-              <img src="images/photofile/ceo_shin.png" width="100%" alt="" />
+              <img src="/images/photofile/ceo_shin.png" width="100%" alt="" />
             </div>
 
             <div

@@ -4,6 +4,7 @@ import Main_footer from 'Pages/Data/Main_footer';
 
 export default class Terms_of_Service extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>

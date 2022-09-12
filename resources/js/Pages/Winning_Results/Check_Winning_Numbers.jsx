@@ -39,6 +39,7 @@ export default class Check_Winning_Numbers extends Component {
     } = this.store;
     const { ballListOut } = this.props.root.ballListProvider;
     const numberValueData = 0;
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -52,43 +53,10 @@ export default class Check_Winning_Numbers extends Component {
                 <p>Check For Winning Numbers</p>
               </div>
 
-              <div className="col-12 text-center">
-                <h4>Check For Winning Numbers</h4>
-              </div>
-
-              <div className="col-12 mb-4 d-flex justify-content-center">
-                <div
-                  style={{
-                    height: '7px',
-                    width: '25px',
-                    background: '#00bbff',
-                    float: 'left',
-                  }}
-                ></div>
-                <div
-                  style={{
-                    height: '7px',
-                    width: '25px',
-                    background: '#ff0000',
-                    float: 'left',
-                  }}
-                ></div>
-                <div
-                  style={{
-                    height: '7px',
-                    width: '25px',
-                    background: '#6426ff',
-                    float: 'left',
-                  }}
-                ></div>
-              </div>
-
               <div className="container">
                 <div className="row">
-                  <div className="col-12 my-3">
+                  <div className="col-xl-6 col-lg-6 col-12 my-3">
                     <h4>Search Winning Numbers</h4>
-                  </div>
-                  <div className="col-12">
                     <ul className="list-unstyled">
                       <li className="list-inline-item">
                         <label
@@ -100,7 +68,7 @@ export default class Check_Winning_Numbers extends Component {
                           }}
                         >
                           <img
-                            src="images/photofile/icon paycam 639.png"
+                            src="/images/photofile/icon paycam 639.png"
                             width="40px"
                             alt=""
                           />{' '}
@@ -108,13 +76,7 @@ export default class Check_Winning_Numbers extends Component {
                         </label>
                       </li>
                     </ul>
-                    <hr />
-                  </div>
-                  <div className="col-12 ">
                     <h4>Results Numbers</h4>
-                  </div>
-
-                  <div className="col-12">
                     <table className="table border text-center">
                       <thead
                         style={{
@@ -231,16 +193,17 @@ export default class Check_Winning_Numbers extends Component {
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                  <div className="col-12">
                     <button className="btn btn-success m-3">
                       <NavLink
-                        to="/How_To_Get_Your_Prizes"
+                        to="/winningresults/How_To_Get_Your_Prizes"
                         className="text-light"
                       >
                         Go To View Detail Prize
                       </NavLink>
                     </button>
+                  </div>
+                  <div className="col-xl-6 col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                    <Ball_List />
                   </div>
                 </div>
               </div>
@@ -348,10 +311,6 @@ export default class Check_Winning_Numbers extends Component {
                   </label>
                 </div>
               </div>
-
-              <div className="col-12 d-flex justify-content-center">
-                <Ball_List />
-              </div>
             </div>
           </div>
           <div className="row py-5" style={{ background: '#f1f2f2' }}>
@@ -379,7 +338,7 @@ export default class Check_Winning_Numbers extends Component {
                       target="_blank"
                     >
                       <img
-                        src="images/photofile/facebook1231.png"
+                        src="/images/photofile/facebook1231.png"
                         width="30px"
                         alt=""
                         className="m-2"
@@ -393,7 +352,7 @@ export default class Check_Winning_Numbers extends Component {
                       target="_blank"
                     >
                       <img
-                        src="images/photofile/youtube-icon.png"
+                        src="/images/photofile/youtube-icon.png"
                         width="30px"
                         alt=""
                         className="m-2"
@@ -402,7 +361,7 @@ export default class Check_Winning_Numbers extends Component {
                     </a>
                     <br />
                     <img
-                      src="images/photofile/result lotto on june 29.06.2022 copy.png"
+                      src="/images/photofile/result lotto on june 29.06.2022 copy.png"
                       width="300px"
                     />
                   </div>

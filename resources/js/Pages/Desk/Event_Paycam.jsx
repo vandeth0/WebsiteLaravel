@@ -122,7 +122,7 @@ export default class Event_Paycam extends Component {
                   </div>
                   <div className="col-12">
                     <img
-                      src="images/photofile/paycam-logo horizontal.png"
+                      src="images/photofile/paycam cambodiajpg.jpg"
                       width="100%"
                       alt=""
                     />

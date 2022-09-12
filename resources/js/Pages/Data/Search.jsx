@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Main_header from 'Pages/Data/Main_header';
 import MenuFooter from './MenuFooter';
 import { inject, observer } from 'mobx-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 @inject('root')
 @observer
@@ -22,7 +24,47 @@ export default class Search extends Component {
       <div>
         {/* {this.store.qrCode('reader')} */}
         <Main_header />
-
+        <div
+          style={{
+            position: 'absolute',
+            top: '30%',
+            left: '0',
+            width: '100%',
+            background: '#fff',
+            zIndex: '2',
+            padding: '20px',
+            display: 'none',
+            border: 'outset',
+          }}
+          id="ticket-no-info"
+        >
+          <h2 className="text-warning">
+            <FontAwesomeIcon icon={faInfoCircle} /> Notice
+          </h2>
+          <hr />
+          <p className="text-dark">
+            This Ticket Is No Have Information or This QR Code Is None
+          </p>
+          <div className="row">
+            <div
+              className="col-12 d-flex "
+              style={{ justifyContent: 'space-between' }}
+            >
+              <span className="text-info">
+                For More Infomation: <br /> +855 23 911 639
+              </span>
+              <button
+                className="btn btn-primary"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  this.store.ticketNoInformation();
+                }}
+              >
+                Okay
+              </button>
+            </div>
+          </div>
+        </div>
         {numberShowResult == 1 &&
           ballListOut.map((item, idx) => {
             if (item.weekly == checkResultBall.round) {

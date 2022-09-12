@@ -4,6 +4,7 @@ import Main_footer from 'Pages/Data/Main_footer';
 
 export default class Lottery_Funds_Social extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -14,37 +15,6 @@ export default class Lottery_Funds_Social extends Component {
             <div className="col-12 my-2">
               <h4>LOVE IN US</h4>
               <p>Lottery Funds Social</p>
-            </div>
-
-            <div className="col-12 text-center">
-              <h4>Lottery Funds Social</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
             </div>
 
             <div className="col-12">
@@ -59,7 +29,7 @@ export default class Lottery_Funds_Social extends Component {
 
             <div className="col-12">
               <img
-                src="images/photofile/paycam-global.jpg"
+                src="/images/photofile/paycam-global.jpg"
                 width="100%"
                 alt=""
                 style={{

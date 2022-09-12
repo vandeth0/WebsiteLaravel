@@ -11,3 +11,5 @@ export { default as NoticeProvider} from './NoticeProvider';
 export { default as SliderPhotoProvider} from './SliderPhotoProvider';
 export { default as CheckingWinningProvider} from './CheckingWinningProvider';
 export { default as UserLoginProvider} from './UserLoginProvider';
+export { default as LocationDealerProvider} from './LocationDealerProvider';
+export { default as BallApiProvider} from './BallApiProvider';

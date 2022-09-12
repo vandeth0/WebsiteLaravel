@@ -42,6 +42,7 @@ export default class News extends Component {
       this.props.root.newsProvider;
     const numberNews = previousNews;
     const { session, sessionall } = this.props.root.userLoginProvider;
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -52,37 +53,6 @@ export default class News extends Component {
             <div className="col-12 my-2">
               <h4>Community</h4>
               <p>News</p>
-            </div>
-
-            <div className="col-12 text-center">
-              <h4>News</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
             </div>
 
             {newsList &&
@@ -130,7 +100,7 @@ export default class News extends Component {
                           </div>
                           <div>
                             <img
-                              src={`storage/News/${item.file_hash}`}
+                              src={`/storage/News/${item.file_hash}`}
                               width="150px"
                               alt=""
                             />
@@ -192,6 +162,7 @@ export default class News extends Component {
                           );
                           this.store.nextNewsChangeValue(-5);
                           this.store.previousNewsChange();
+                          window.scrollTo(0, 0);
                         }}
                       >
                         <FontAwesomeIcon icon={faAngleLeft} /> Previous
@@ -219,6 +190,7 @@ export default class News extends Component {
                             );
                             this.store.nextNewsChange();
                             this.store.nextNewsChangeValue(5);
+                            window.scrollTo(0, 0);
                           }}
                         >
                           Next

@@ -40,19 +40,21 @@ export default class Main_header extends Component {
             left: '0',
           }}
         >
-          <div className="row">
-            <div className="col-xl-3 col-lg-3 col-md-3 col-12 d-flex justify-content-start j-c-s align-items-center logo-moblie-1">
-              <div className="img-logo-1">
-                <NavLink to="/">
-                  <img
-                    src="images/photofile/paycam-logo horizontal.png"
-                    width="180px"
-                    alt=""
-                  />
-                </NavLink>
+          <div className="container">
+            <div className="row">
+              <div className=" col-xl-3 col-lg-3 col-md-3 col-12 d-flex justify-content-start j-c-s align-items-center logo-moblie-1">
+                <div className="img-logo-1">
+                  <NavLink to="/">
+                    <img
+                      src="/images/photofile/paycam cambodiajpg.jpg"
+                      width="180px"
+                      alt=""
+                    />
+                  </NavLink>
+                </div>
               </div>
+              <Menu_header />
             </div>
-            <Menu_header />
           </div>
           <div className="row">
             <input type="checkbox" className="d-none" name="" id="check-menu" />
@@ -65,7 +67,7 @@ export default class Main_header extends Component {
           </div>
         </div>
 
-        <div className="container-fluid moblie-phone"></div>
+        <div className="container-fluid moblie-phone "></div>
         {/* Menu Header */}
       </div>
     );

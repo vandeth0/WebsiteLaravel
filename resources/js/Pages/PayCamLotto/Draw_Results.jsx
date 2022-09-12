@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Main_header from 'Pages/Data/Main_header';
 import Main_footer from 'Pages/Data/Main_footer';
+import { NavLink } from 'react-router-dom';
 
 export default class Draw_Results extends Component {
   render() {
+    window.scrollTo(0, 0);
     const array = [
       '1st',
       '2nd',
@@ -49,37 +51,6 @@ export default class Draw_Results extends Component {
               <p>Draw Results</p>
             </div>
 
-            <div className="col-12 text-center">
-              <h4>Draw Results</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
-            </div>
-
             <div className="col-12">
               <h4>Draw Results</h4>
               <p>
@@ -87,26 +58,16 @@ export default class Draw_Results extends Component {
                 Live Lotto Lucky Draw Show
               </p>
             </div>
-            <div
-              className="col-12"
-              style={{
-                whiteSpace: 'nowrap',
-                overflowY: 'hidden',
-                overflowX: ' auto',
-              }}
-            >
-              {data_show_live}
-            </div>
-            <hr className="my-3" />
-            <div className="col-12">
+            <div className="col-xl-8 col-lg-8 col-12">
               <iframe
                 name="a"
                 src=""
                 frameBorder="0"
                 width="100%"
                 height="350px"
+                className="bg-dark"
               ></iframe>
-              <p>
+              <p style={{ whiteSpace: 'normal' }}>
                 With such as vast range of lotteries available for you to play,
                 and the ease of access we all have to the Internet nowadays many
                 people prefer to quickly check their lottery results online. If
@@ -114,6 +75,25 @@ export default class Draw_Results extends Component {
                 find out what the winning numbers are for that specific draw.
               </p>
             </div>
+
+            <div className="col-xl-4 col-lg-4 col-12 moblie-view">
+              <NavLink to="/paycamlotto639/Solution">
+                <img
+                  src="/images/photofile/photo scan qrcode copy.png"
+                  alt=""
+                />
+              </NavLink>
+            </div>
+          </div>
+          <div
+            className=""
+            style={{
+              whiteSpace: 'nowrap',
+              overflowY: 'hidden',
+              overflowX: ' auto',
+            }}
+          >
+            {data_show_live}
           </div>
         </div>
         <div>

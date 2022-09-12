@@ -4,6 +4,7 @@ import Main_footer from 'Pages/Data/Main_footer';
 
 export default class How_To_Get_Your_Prizes extends Component {
   render() {
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -17,42 +18,11 @@ export default class How_To_Get_Your_Prizes extends Component {
                 <p>How To Get Your Prizes</p>
               </div>
 
-              <div className="col-12 text-center">
-                <h4>How To Get Your Prizes</h4>
-              </div>
-
-              <div className="col-12 mb-4 d-flex justify-content-center">
-                <div
-                  style={{
-                    height: '7px',
-                    width: '25px',
-                    background: '#00bbff',
-                    float: 'left',
-                  }}
-                ></div>
-                <div
-                  style={{
-                    height: '7px',
-                    width: '25px',
-                    background: '#ff0000',
-                    float: 'left',
-                  }}
-                ></div>
-                <div
-                  style={{
-                    height: '7px',
-                    width: '25px',
-                    background: '#6426ff',
-                    float: 'left',
-                  }}
-                ></div>
-              </div>
-
               <div className="col-12 border my-3">
                 <div className="row">
                   <div className="col-2 my-2">
                     <img
-                      src="images/photofile/1st2nd3rd.jpg"
+                      src="/images/photofile/1st2nd3rd.jpg"
                       width="100%"
                       alt=""
                     />
@@ -68,7 +38,7 @@ export default class How_To_Get_Your_Prizes extends Component {
                   </div>
                   <div className="col-2 my-2">
                     <img
-                      src="images/photofile/Prize wl paycam.jpg"
+                      src="/images/photofile/Prize wl paycam.jpg"
                       width="100%"
                       alt=""
                     />
@@ -79,7 +49,7 @@ export default class How_To_Get_Your_Prizes extends Component {
                 <div className="row">
                   <div className="col-2 my-2">
                     <img
-                      src="images/photofile/4th Prize.jpg"
+                      src="/images/photofile/4th Prize.jpg"
                       width="100%"
                       alt=""
                     />
@@ -95,7 +65,7 @@ export default class How_To_Get_Your_Prizes extends Component {
                   </div>
                   <div className="col-2 my-2">
                     <img
-                      src="images/photofile/prize branch office.jpg"
+                      src="/images/photofile/prize branch office.jpg"
                       width="100%"
                       alt=""
                     />
@@ -106,7 +76,7 @@ export default class How_To_Get_Your_Prizes extends Component {
                 <div className="row">
                   <div className="col-2 my-2">
                     <img
-                      src="images/photofile/5th prize.jpg"
+                      src="/images/photofile/5th prize.jpg"
                       width="100%"
                       alt=""
                     />
@@ -122,7 +92,7 @@ export default class How_To_Get_Your_Prizes extends Component {
                   </div>
                   <div className="col-2 my-2">
                     <img
-                      src="images/photofile/prize branch office.jpg"
+                      src="/images/photofile/prize branch office.jpg"
                       width="100%"
                       alt=""
                     />

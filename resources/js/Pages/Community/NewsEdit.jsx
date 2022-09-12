@@ -36,6 +36,7 @@ export default class NewsEdit extends Component {
   }
   render() {
     const { editModalData } = this.store;
+
     return (
       <>
         <div className="col-12">

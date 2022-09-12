@@ -45,9 +45,11 @@ export default class Main_body extends Component {
     super(props);
     this.store = props.root.userLoginProvider;
     this.store.readUserLogin();
+    this.ss = props.root.sliderPhotoProvider;
   }
   render() {
-    const { session, sessionall } = this.store;
+    window.scrollTo(0, 0);
+    const { session, sessionall, style } = this.store;
     const array1 = [
       'Lottery will be broadcast live at 8:00 Night on TV9 every Tuesday',
       'Lottery will be broadcast live at 8:00 Night on TV9 every Tuesday',
@@ -76,111 +78,100 @@ export default class Main_body extends Component {
         <div>
           <Main_header />
         </div>
-        <input
-          type="checkbox"
-          name=""
-          id="slider-photo-change"
-          className="d-none"
-        />
-        <div className="slider-photo">
+
+        <div className="slider-photo" id="slider-photo-on">
           <div className="container">
-            <label htmlFor="slider-photo-change" className="btn btn-dark">
+            <label
+              id="slider-photo-off"
+              onClick={(e) => {
+                e.stopPropagation();
+                this.ss.sliderClose();
+              }}
+              className="btn btn-dark"
+            >
               Back
             </label>
             <UploadSliderPhoto />
           </div>
         </div>
-        {/* Image_slider */}
-        <Image_slider />
-        {/* Image_slider */}
-        <div>
-          {session.username == sessionall.username &&
-            session.password == sessionall.password && (
-              <button className="btn btn-warning">
-                <label htmlFor="slider-photo-change"> Change Photo </label>
-              </button>
-            )}
-        </div>
         <div className="container my-3">
-          <h4>Information</h4>
-          <input type="radio" className="d-none" name="a" id="design" />
-          <input type="radio" className="d-none" name="a" id="info" />
-          <input type="radio" className="d-none" name="a" id="video" />
-          <input type="radio" className="d-none" name="a" id="news" />
-          <ul className="list-unstyled menu-info">
-            <li className="list-inline-item design">
-              <label htmlFor="design">News</label>
-            </li>
-            {/* <li className="list-inline-item info">
-              <label htmlFor="info">Info</label>
-            </li> */}
-            <li className="list-inline-item video">
-              <label htmlFor="video">Video</label>
-            </li>
-            <li className="list-inline-item news">
-              <label htmlFor="news"> Design</label>
-            </li>
-          </ul>
-          <hr />
-          <div className="main-infomation font-khmer-language">
-            <ul className="information-view">
-              <li className="design-info">
+          <div className="row">
+            <div className="col-xl-9 col-lg-9 col-12">
+              <Image_slider />
+              <div>
+                {session.username == sessionall.username &&
+                  session.password == sessionall.password && (
+                    <button
+                      className="btn btn-warning"
+                      style={{ display: style }}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        this.ss.silderEnter();
+                      }}
+                    >
+                      Change Photo
+                    </button>
+                  )}
+              </div>
+              <div className="row">
+                <div className="col-12 text-center my-4">
+                  <h4 style={{ fontWeight: 'bold' }}>
+                    Purchase The Tickets <br /> PayCam Lotto
+                  </h4>
+                  <p className="text-secondary">
+                    Play from 1$ and up, Can choose 6 numbers out of 39. You can
+                    choose the number directly and, <br />
+                    Also you can select number automatically
+                  </p>
+                </div>
+
+                <div className="col-12">
+                  <div className="row hover-sacle">{data_play}</div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-3 col-12 moblie-view">
+              <div className="menu-news-info">
                 <New_info />
-              </li>
-              {/* <li className="info-info">
-                <Info_info />
-              </li> */}
-              <li className="video-info">
-                <Video_info />
-              </li>
-              <li className="news-info">
-                <Design_info />
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <hr />
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-12 text-center my-4">
-              <h4 style={{ fontWeight: 'bold' }}>
-                Purchase The Tickets <br /> PayCam Lotto
-              </h4>
-              <p className="text-secondary">
-                Play from 1$ and up, Can choose 6 numbers out of 39. You can
-                choose the number directly and, <br />
-                Also you can select number automatically
-              </p>
-            </div>
 
-            <div className="col-12">
-              <div className="row hover-sacle">{data_play}</div>
-            </div>
-          </div>
-        </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-9 col-lg-9 col-12">
+                <Event_Paycam />
+                <About_Body />
+              </div>
 
-        <div className="container">
-          <div className="row">
-            <div className="col-12 my-4 py-5 text-center">
-              <h4 style={{ fontWeight: 'bold' }}>
-                Lottery broadcast and will be broadcast
-                <br />
-                once a week
-              </h4>
-              <p className="text-secondary">
-                Lottery will be broadcast live at 8:00 Night <br />
-                on TV9 every Tuesday
-              </p>
-            </div>
-            <Ball_List />
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <Event_Paycam />
-              <About_Body />
+              <div className="col-xl-3 col-lg-3 col-12 moblie-view">
+                <iframe
+                  src="https://www.youtube.com/embed/OeITwGpahw8"
+                  width="100%"
+                  frameBorder="0"
+                ></iframe>
+                <iframe
+                  src="https://www.youtube.com/embed/cGQ_uoMhJLM"
+                  width="100%"
+                  frameBorder="0"
+                ></iframe>
+                <iframe
+                  src="https://www.youtube.com/embed/OkQHT4EnKc0"
+                  width="100%"
+                  frameBorder="0"
+                ></iframe>
+                <iframe
+                  src="https://www.youtube.com/embed/OeITwGpahw8"
+                  width="100%"
+                  frameBorder="0"
+                ></iframe>
+                <iframe
+                  src="https://www.youtube.com/embed/cGQ_uoMhJLM"
+                  width="100%"
+                  frameBorder="0"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default class LOVE_IN_US extends Component {
           <label htmlFor="choose4">
             <span className="font-a">
               <img
-                src="images/photofile/love in us-icon.png"
+                src="/images/photofile/love in us-icon.png"
                 width="25px"
                 alt=""
               />{' '}
@@ -30,9 +30,9 @@ export default class LOVE_IN_US extends Component {
 
           <div className="choose-language">
             <div>
-              <NavLink to="/Lottery_Funds_Social">
+              <NavLink to="/loveinus/Lottery_Funds_Social">
                 <img
-                  src="images/photofile/Lottery funds Social.png"
+                  src="/images/photofile/Lottery funds Social.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -40,9 +40,9 @@ export default class LOVE_IN_US extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Social_Contribution">
+              <NavLink to="/loveinus/Social_Contribution">
                 <img
-                  src="images/photofile/Social contribution icon.png"
+                  src="/images/photofile/Social contribution icon.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -50,9 +50,9 @@ export default class LOVE_IN_US extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Community_Service">
+              <NavLink to="/loveinus/Community_Service">
                 <img
-                  src="images/photofile/community-cion.png"
+                  src="/images/photofile/community-cion.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -60,9 +60,9 @@ export default class LOVE_IN_US extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Donation_Report">
+              <NavLink to="/loveinus/Donation_Report">
                 <img
-                  src="images/photofile/detail-icon.png"
+                  src="/images/photofile/detail-icon.png"
                   width="25px"
                   alt=""
                 />{' '}

@@ -38,13 +38,13 @@ export default class Support extends Component {
             />
           </label>
           <div className="menu-ft-3">
-            <NavLink to="/QnA">
+            <NavLink to="/community/QnA">
               <p>Problem</p>
             </NavLink>
-            <NavLink to="/QnA">
+            <NavLink to="/community/QnA">
               <p>QnA</p>
             </NavLink>
-            <NavLink to="/QnA">
+            <NavLink to="/community/QnA">
               <p>Suggestion</p>
             </NavLink>
           </div>

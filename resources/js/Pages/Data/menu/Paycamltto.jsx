@@ -19,7 +19,7 @@ export default class Paycamltto extends Component {
           <label htmlFor="choose1">
             <span className="font-a">
               <img
-                src="images/photofile/icon paycam 639.png"
+                src="/images/photofile/icon paycam 639.png"
                 width="25px"
                 alt=""
               />
@@ -30,9 +30,9 @@ export default class Paycamltto extends Component {
 
           <div className="choose-language">
             <div>
-              <NavLink to="/Solution">
+              <NavLink to="/paycamlotto639/Solution">
                 <img
-                  src="images/photofile/solution icon.png"
+                  src="/images/photofile/solution icon.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -40,9 +40,9 @@ export default class Paycamltto extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Draw_Results">
+              <NavLink to="/paycamlotto639/Draw_Results">
                 <img
-                  src="images/photofile/equiment icom.png"
+                  src="/images/photofile/equiment icom.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -50,9 +50,9 @@ export default class Paycamltto extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Lottery_Equipment">
+              <NavLink to="/paycamlotto639/Lottery_Equipment">
                 <img
-                  src="images/photofile/equipment-icon.png"
+                  src="/images/photofile/equipment-icon.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -60,15 +60,15 @@ export default class Paycamltto extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/How_To_Buy">
-                <img src="images/photofile/how to.png" width="25px" alt="" />{' '}
+              <NavLink to="/paycamlotto639/How_To_Buy">
+                <img src="/images/photofile/how to.png" width="25px" alt="" />{' '}
                 How To Buy
               </NavLink>
             </div>
             <div>
               <NavLink to="#">
                 <img
-                  src="images/photofile/store-icon.png"
+                  src="/images/photofile/store-icon.png"
                   width="25px"
                   alt=""
                 />{' '}
@@ -76,10 +76,12 @@ export default class Paycamltto extends Component {
               </NavLink>
             </div>
             <div>
-              <NavLink to="/Direct_Management">Direct Management</NavLink>
+              <NavLink to="/paycamlotto639/Direct_Management">
+                Direct Management
+              </NavLink>
             </div>
             <div>
-              <NavLink to="/Agency">Agency</NavLink>
+              <NavLink to="/paycamlotto639/Agency">Agency</NavLink>
             </div>
           </div>
         </div>

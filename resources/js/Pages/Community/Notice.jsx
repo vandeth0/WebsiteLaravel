@@ -44,7 +44,7 @@ export default class Notice extends Component {
       this.props.root.noticeProvider;
     const numberNotice = previousNotice;
     const { session, sessionall } = this.props.root.userLoginProvider;
-
+    window.scrollTo(0, 0);
     return (
       <>
         <div>
@@ -55,37 +55,6 @@ export default class Notice extends Component {
             <div className="col-12 my-2">
               <h4>Community</h4>
               <p>Notice</p>
-            </div>
-
-            <div className="col-12 text-center">
-              <h4>Notice</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
             </div>
 
             {noticeList &&
@@ -218,6 +187,7 @@ export default class Notice extends Component {
                           );
                           this.store.nextNoticeChangeValue(-5);
                           this.store.previousNoticeChange();
+                          window.scrollTo(0, 0);
                         }}
                       >
                         <FontAwesomeIcon icon={faAngleLeft} /> Previous
@@ -247,6 +217,7 @@ export default class Notice extends Component {
                             );
                             this.store.nextNoticeChange();
                             this.store.nextNoticeChangeValue(5);
+                            window.scrollTo(0, 0);
                           }}
                         >
                           Next

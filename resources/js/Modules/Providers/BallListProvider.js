@@ -21,13 +21,13 @@ export default class BallListProvider {
   // @observable typeOfInput = '';
   @observable addModalFile = '';
   @observable inputBallList = {
-    num1: '',
-    num2: '',
-    num3: '',
-    num4: '',
-    num5: '',
-    num6: '',
-    bonus: '',
+    // num1: '',
+    // num2: '',
+    // num3: '',
+    // num4: '',
+    // num5: '',
+    // num6: '',
+    // bonus: '',
     dateDraw: '',
     weekly: '',
     
@@ -56,13 +56,13 @@ export default class BallListProvider {
     const {data} = await this.repo.createdBallList(this.inputBallList)
     // console.log(data)
     this.inputBallList = {
-      num1: '',
-      num2: '',
-      num3: '',
-      num4: '',
-      num5: '',
-      num6: '',
-      bonus: '',
+      // num1: '',
+      // num2: '',
+      // num3: '',
+      // num4: '',
+      // num5: '',
+      // num6: '',
+      // bonus: '',
       dateDraw: '',
       weekly: '',
 

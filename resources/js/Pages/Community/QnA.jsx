@@ -19,6 +19,7 @@ import {
   faUser,
   faUsersViewfinder,
 } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 @inject('root')
 @observer
@@ -30,6 +31,7 @@ export default class QnA extends Component {
   }
 
   render() {
+    window.scrollTo(0, 0);
     const { inputQNA, qnaList, qnaListNext, qnaComment, previousQna, NextQna } =
       this.store;
     const numberQna = previousQna;
@@ -39,7 +41,7 @@ export default class QnA extends Component {
           <div key={`qna-idx${idx}`}>
             <div className="card-header">
               <img
-                src="images/photofile/logo app paycam.png"
+                src="/images/photofile/logo app paycam.png"
                 width="25px"
                 height="25px"
                 alt=""
@@ -81,6 +83,7 @@ export default class QnA extends Component {
                   );
                   this.store.nextQnaChangeValue(-5);
                   this.store.previousQnaChange();
+                  window.scrollTo(0, 0);
                 }}
               >
                 <FontAwesomeIcon icon={faAngleLeft} /> Previous
@@ -108,6 +111,7 @@ export default class QnA extends Component {
                     );
                     this.store.nextQnaChange();
                     this.store.nextQnaChangeValue(5);
+                    window.scrollTo(0, 0);
                   }}
                 >
                   Next
@@ -127,42 +131,11 @@ export default class QnA extends Component {
         <div>
           <Main_header />
         </div>
-        <div className="container">
+        <div className="container" id="main-body">
           <div className="row">
             <div className="col-12 my-2">
               <h4>Community</h4>
               <p>Question and Answer</p>
-            </div>
-
-            <div className="col-12 text-center">
-              <h4>Question and Answer</h4>
-            </div>
-
-            <div className="col-12 mb-4 d-flex justify-content-center">
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#00bbff',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#ff0000',
-                  float: 'left',
-                }}
-              ></div>
-              <div
-                style={{
-                  height: '7px',
-                  width: '25px',
-                  background: '#6426ff',
-                  float: 'left',
-                }}
-              ></div>
             </div>
 
             <div className="col-12">
@@ -171,86 +144,129 @@ export default class QnA extends Component {
                 Welcome to Paycam, How can we help you? You can comment below.
               </p>
             </div>
-
-            <input
-              type="text"
-              name=""
-              id=""
-              value={inputQNA}
-              className="form-control"
-              placeholder="Comment Anythings..."
-              style={{ height: '150px' }}
-              onChange={(e) => {
-                e.stopPropagation();
-                const { value } = e.target;
-                this.store.inputQNAChange(value);
-              }}
-            />
-            <button
-              className="btn"
-              style={{
-                background: 'linear-gradient(to right,#9901b7,#460ca7)',
-                color: '#fff',
-              }}
-              onClick={(e) => {
-                e.stopPropagation();
-                const confirmCheck = confirm('Save Msg?');
-                if (confirmCheck === true) {
-                  this.store.createdQNA();
-                }
-              }}
-            >
-              Comment
-            </button>
+            <div className="col-xl-8 col-lg-8  col-12">
+              <div style={{ width: '100%' }}>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  value={inputQNA}
+                  className="form-control"
+                  placeholder="Comment Anythings..."
+                  style={{ height: '200px' }}
+                  onChange={(e) => {
+                    e.stopPropagation();
+                    const { value } = e.target;
+                    this.store.inputQNAChange(value);
+                  }}
+                />
+                <button
+                  className="btn"
+                  style={{
+                    background: 'linear-gradient(to right,#9901b7,#460ca7)',
+                    color: '#fff',
+                  }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    const confirmCheck = confirm('Save Msg?');
+                    if (confirmCheck === true) {
+                      this.store.createdQNA();
+                    }
+                  }}
+                >
+                  Comment
+                </button>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-12 moblie-none">
+              <NavLink to="/paycamlotto639/Solution">
+                <img
+                  src="/images/photofile/photo scan qrcode.jpg"
+                  width="50%"
+                  alt=""
+                />
+                <p>How to play with Scan QR Code?</p>
+              </NavLink>
+            </div>
           </div>
         </div>
         <hr />
-        <div className="main-bg border">
-          <input type="radio" name="a" id="recents1" />
-          <label htmlFor="recents1" className="cmm-text1">
-            {' '}
-            Recents
-          </label>
-          <input type="radio" name="a" id="recents2" />
-          <label htmlFor="recents2" className="cmm-text2">
-            {' '}
-            Newest
-          </label>
-          <input type="radio" name="a" id="recents3" />
-          <label htmlFor="recents3" className="cmm-text3">
-            {' '}
-            Oldest
-          </label>
-          <input type="radio" name="a" id="recents4" />
-          <label htmlFor="recents4" className="cmm-text4">
-            {' '}
-            Most Comment
-          </label>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+              <div className="main-bg border">
+                <input type="radio" name="a" id="recents1" />
+                <label htmlFor="recents1" className="cmm-text1">
+                  {' '}
+                  Recents
+                </label>
+                <input type="radio" name="a" id="recents2" />
+                <label htmlFor="recents2" className="cmm-text2">
+                  {' '}
+                  Newest
+                </label>
+                <input type="radio" name="a" id="recents3" />
+                <label htmlFor="recents3" className="cmm-text3">
+                  {' '}
+                  Oldest
+                </label>
+                <input type="radio" name="a" id="recents4" />
+                <label htmlFor="recents4" className="cmm-text4">
+                  {' '}
+                  Most Comment
+                </label>
 
-          <hr />
+                <hr />
 
-          <ul className="menu-comment">
-            <li className="recents">
-              <h4>Recents</h4>
-              {dataComment}
-              {nextPrevious}
-            </li>
-            <li className="newest">
-              <h4>Newest</h4>
-              {dataComment}
-              {nextPrevious}
-            </li>
-            <li className="oldest">
-              <h4>Oldest</h4>
-              {dataComment}
-              {nextPrevious}
-            </li>
-            <li className="most">
-              <h4>Most Comment</h4>
-              {dataComment}
-              {nextPrevious}
-            </li>
-          </ul>
+                <ul className="menu-comment">
+                  <li className="recents">
+                    <h4>Recents</h4>
+                    {dataComment}
+                    {nextPrevious}
+                  </li>
+                  <li className="newest">
+                    <h4>Newest</h4>
+                    {dataComment}
+                    {nextPrevious}
+                  </li>
+                  <li className="oldest">
+                    <h4>Oldest</h4>
+                    {dataComment}
+                    {nextPrevious}
+                  </li>
+                  <li className="most">
+                    <h4>Most Comment</h4>
+                    {dataComment}
+                    {nextPrevious}
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-4 moblie-none">
+              <h4>FQA</h4>
+              <p>You Can Review The Answer Below</p>
+              <details>
+                <summary>How to play lotto paycam?</summary>
+                <ol>
+                  <li>Lotto is most popular lottery game above the world.</li>
+                  <li>
+                    In more than 90 countries, lotto is played as a public
+                    lottery game and occupied 70% of lottery market.
+                  </li>
+                  <li>
+                    As a international standard lottery service, WL Paycam
+                    launched March 2022 in Cambodia.
+                  </li>
+                  <li>
+                    Lotto 6/39 means customer select 6 number among 39 numbers.
+                    When drawing number, all customers of 6 numbers matched with
+                    6 drawn numbers, 1st prize will come.
+                  </li>
+                </ol>
+              </details>
+            </div>
+          </div>
         </div>
         <div>
           <Main_footer />

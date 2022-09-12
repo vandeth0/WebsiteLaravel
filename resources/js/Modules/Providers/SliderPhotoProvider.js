@@ -5,7 +5,25 @@ export default class SliderPhotoProvider {
   constructor(root) {
     this.root = root;
     this.repo = Repos.sliderPhotoRepo;
+  } 
+  @action silderEnter = () => {
+    document.getElementById('slider-photo-on').style.top= "0"
   }
+  @action sliderClose = () => {
+    document.getElementById('slider-photo-on').style.top= "-100%"
+  }
+
+
+
+
+
+
+
+
+
+
+
+
   @observable addModal = false;
   @observable addModalData = null;
   @observable addModalFile1 = null;
